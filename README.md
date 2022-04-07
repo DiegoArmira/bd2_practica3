@@ -1,0 +1,2 @@
+# bd2_practica3
+PRACTICA CASSANDRA 
