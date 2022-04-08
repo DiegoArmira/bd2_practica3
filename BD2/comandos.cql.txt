@@ -1,0 +1,22 @@
+DESC KEYSPACES
+DESC SCHEMA
+
+CREATE KEYSPACE prueba WITH REPLICATION = {'class':'SimpleStrategy','replication_factor':1};
+
+
+--------------------------------------
+USE prueba 
+
+CREATE TABLE IF NOT EXISTS fruta(item_id TEXT, )
+
+-----------------------------------------
+
+CREATE KEYSPACE laliga WITH REPLICATION = {'class':'SimpleStrategy','replication_factor':1};
+
+USE laliga 
+
+CREATE TABLE IF NOT EXISTS equipo(item_id TEXT, name TEXT, ranking TEXT, PRIMARY KEY (item_id) )
+CREATE TABLE IF NOT EXISTS estadio(item_id TEXT, name TEXT, ranking TEXT, PRIMARY KEY (item_id) )
+CREATE TABLE IF NOT EXISTS juego(item_id TEXT, name TEXT, ranking TEXT, PRIMARY KEY (item_id) )
+CREATE TABLE IF NOT EXISTS jugadores(item_id TEXT, name TEXT, ranking TEXT, PRIMARY KEY (item_id) )
+CREATE TABLE IF NOT EXISTS temporada(item_id TEXT, name TEXT, ranking TEXT, PRIMARY KEY (item_id) )
